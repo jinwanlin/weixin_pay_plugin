@@ -13,7 +13,7 @@ $(function(){
 			   $("#repeat_check").val(data.trans_openid)
 
 			   $("#transfee").val(data.transfee)
-			   $("#transnote").val("提现")
+			   $("#transnote").val("返还代收款")
 			   document.getElementById('username-nocheck').click();
 
 			   $("#trans_submit").on("click",function(){
