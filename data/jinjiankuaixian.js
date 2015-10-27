@@ -14,7 +14,9 @@ $(function(){
 
 			   $("#transfee").val(data.transfee)
 			   $("#transnote").val("返还代收款")
-			   document.getElementById('username-nocheck').click();
+			   //document.getElementById('username-nocheck').click();
+			   $($("#rdo1 label")[0]).removeClass("selected")
+			   $($("#rdo1 label")[2]).addClass("selected")
 
 			   $("#trans_submit").on("click",function(){
 			   		$.ajax({url: "http://182.92.228.78/demo/test/submit?id="+bill_id});
